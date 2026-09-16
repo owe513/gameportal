@@ -1,0 +1,2 @@
+const search=document.querySelector('#search'); const cards=[...document.querySelectorAll('.card')];
+search.addEventListener('input',()=>{const q=search.value.toLowerCase();cards.forEach(c=>{c.style.display=c.innerText.toLowerCase().includes(q)?'flex':'none'})});
